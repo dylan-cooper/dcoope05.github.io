@@ -1,7 +1,95 @@
+body, div, nav {
+    font-size: 110%;
+    line-height: 150%;
+    font-family: sans-serif;
+    margin: 0;
+}
+
 .state{
     display: none;
 }
 
 .visible{
     display: block;
+}
+
+nav {
+    width: 100%;
+    background-color: #3ad;
+    height: 30px;
+    display: flex;
+    align-items: stretch;
+}
+
+nav a {
+    margin: auto;
+    display: block;
+    cursor: auto;
+    float: left;
+    font-weight: bold;
+    color: #fff;
+    background-color: #3ad;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+nav a:hover {
+    background-color: #fff;
+    color: #3ad;
+}
+
+.banner {
+    width: 100%;
+    height: 150px;
+    background-color: #3ad;
+    color: #ffffff;
+    padding: 2em;
+}
+
+.banner-gradient {
+    background: -webkit-linear-gradient(#3ad, #fff); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#3ad, #fff); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#3ad, #fff); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#3ad, #fff); /* Standard syntax (must be last) */
+}
+
+
+.banner > div:nth-child(1) {
+    text-align: center; 
+    font-size: 3.5em;
+}
+.banner > div:nth-child(2) {
+    text-align: center;
+    font-size: 2em;
+}
+
+.main {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+img {
+    margin: 10px;
+}
+
+#uog-logo {
+    width: 15%;
+    float: left;
+}
+
+#webdev-logo {
+    width: 25%;
+    float: left;
+}
+
+#kb-logo {
+    width: 30%;
+    float: right;
+}
+
+#vs-logo {
+    width: 35%;
+    float: right;
 }

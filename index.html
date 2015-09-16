@@ -8,47 +8,93 @@
     <script type="text/javascript" src="js/main.js"></script>
 </head>
 <body>
-    <a href="#">Home</a>
-    <a href="#about-me">About Me</a>
-    <a href="#about-site">About This Site</a>
 
-    <div id="home" class="state">
-        <h1>Home</h1>
-        <p>This is the personal/professional site of Dylan Cooper</p>
+
+    <div class="banner">
+        <div>Dylan Cooper</div>
+        <div>Personal and Professional Web Page</div>
     </div>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#about-me">About Me</a>
+        <a href="#about-site">About This Site</a>
+        <a href="#ccs-coop">Co-op at CCS</a>
+    </nav>
 
-    <div id="about-me" class="state">
-        <h1>About Me</h1>
-        <p>Hi, I'm Dylan Cooper, I am majoring in Software Engineering and minoring in Physics at the University of Guelph</p>
-        <p></p>
+    <div class="main">
+        <div id="home" class="state">
+            <h1>Home</h1>
+            <p>This is the personal/professional site of Dylan Cooper</p>
+        </div>
+
+        <div id="about-me" class="state">
+            <h1>About Me</h1>
+            <p>Hi, I'm Dylan Cooper, I am majoring in Software Engineering and minoring in Physics at the University of Guelph</p>
+            <p></p>
+        </div>
+
+        <div id="about-site" class="state">
+            <h1>This site</h1>
+            <p>This site was designed as a simple, frameworkless, single page application.  The reason I used an SPA rather than a regular website was because I felt like experimenting.</p>
+            <p>It is hosted through Github Pages.</p>
+            <p>
+                Inspiration for the hashchanging technique on this site came from
+                <a href="http://tutorialzine.com/2015/02/single-page-app-without-a-framework/">here</a>
+                which allows the URL to dictate the state of the page even though it is an SPA.
+            </p>
+            <p>Maybe I'll even make this page responsive...</p>
+        </div>
+
+        <div id="ccs-coop" class="state">
+            <h1>Co-op with University of Guelph CCS</h1>
+            
+            <h2>Introduction</h2>
+            <img id="uog-logo" src="img/ccs-logo.png">
+
+            <p>During the Summer of 2015, I worked as a Junior Developer in the Enterprise Applications Team of Computing &amp; Communication Services at the University of Guelph.  This was my first job in a technical role and I found it very rewarding.</p>
+            <p>I learned a lot about the software development process during my time on the time.  The software that we were working on was still in the pre-production stage, and a lot of what I was doing was essentially researching what technologies we could use moving forward and how to use both these technologies and the ones provided to us by the vendor.</p>
+
+            <h2>Goals</h2>
+            
+            <h3>Improve Understanding of Large-Scale Software Systems</h3>
+            <p>I did gain a great understanding of how this system worked.  By reading architecture documents and digging through the code, I learned all about the ins and outs of how this system worked.  Through research, I also gained a solid understanding of the similarities and differences that the system had to other systems that were more common.  I think that this was one of the best things about this work term; by the time that it ended, I was able to think about the large-scale infrastructure alongside the smaller-scale details that I was actually doing and this helped me produce code that was more robust and scalable.</p>
+            
+            <h3>Learn C#, .NET framework, and other tools related to the system</h3>
+            <p>Tools/technologies that I extensively used while at this position:</p>
+            <img src="img/visual-studio.png" id="vs-logo">
+
+            <ul>
+                <li>C#</li>
+                <li>Microsoft Visual Studio</li>
+                <li>Git Source Control (Git Extensions)</li>
+                <li>ASP.NET MVC 5</li>
+                <li>ASP.NET Web API</li>
+                <li>Razor View Engine</li>
+                <li>Telerik Fiddler</li>
+                <li>KnockoutJS</li>
+                <li>JSFiddle</li>
+                <li>JQuery, JQuery UI</li>
+                <li>Ajax</li>
+                <li>Vendor specific SDKs</li>
+                <li>More…</li>
+            </ul>
+            <p>Over the course of the 4 month work term, I became very familiar with these technologies.  Gaining a comprehensive knowledge of these tools not only helped me make a meaningful impact on the team, but now I also feel very confident that I could use them again on another project.  As I got more and more familiar and comfortable with these technologies, I started to use these technologies (and similar ones) for small projects during my free time.  I think that the best part about learning this large variety of tools is that I was able to gain a more hollistic understanding of the system; I wasn't focused on a specific area and ignoring what was happening in other areas.</p>
+            
+            <h3>Gain understanding of Web Development Best Practices</h3>
+            <img src="img/html-css-js-logos.png" id="webdev-logo">
+            <p>Before this term, I had done a little bit of HTML, JavaScript and PHP but my web development experience was very limited.  In this position, I became increasingly interested in this field.  I worked with HTML5, CSS3 and JavaScript extensively while working on the front end and became very familiar with these tools.  At work I became familiar with several JavaScript libraries including KnockoutJS and JQuery and in my free time I looked at others including Backbone and Angular.</p>
+            
+            <h3>Improve Documentation Skills</h3>
+            <img src="img/knowledge-base.png" id="kb-logo">
+            <p>I documented a lot over the course of this work term.  Because the project was still in the pre-production stages, the Knowledge-Base that the team would work with extensively in the coming years still had to be created.  This meant that about half of my time was spent explaining what I did in the other half.  Over the course of the term, I got a lot better at this; I got better at knowing where to go into detail to make the documents complete and where not to go into detail to keep the focus where it should be.</p>
+            
+            <h3>See the Software Development Cycle Firsthand</h3>
+            <p>In Software Design courses, I learned about the different stages of the software development lifecycle, and using this firsthand on a day-to-day basis was really interesting for me.  In the last 2 months of my work term, I worked on a project in the system that I was exploring.I went to meetings with the clients to gather requirements, worked with my supervisor to design the project and played the primary role in actually developing the solution.  My work term ended just as the initial development was finished and I had demoed it to stakeholders and other members of the team.  While I didn’t get to see the project move to the later stages of the development cycle, meeting with the clients and seeing that perspective of software development was really interesting for me.</p>
+
+            <h2>Reflection</h2>
+            <p>My goal with each of my work terms is to gain a better understanding of different aspects of the software development industry.  There were a lot of aspects to this job that I really liked.  The team was small, so I never felt like a "cog in the machine"; I could see how my work was impacting the product as a whole, and how the documentation I was doing was contributing to the team's knowledge-base that would affect the way the team would work in the future.  </p>
+        </div>
+
     </div>
-
-    <div id="about-site" class="state">
-        <h1>This site</h1>
-        <p>This site was designed as a simple, frameworkless, single page application.</p>
-        <p>It is hosted through Github Pages.</p>
-        <p>
-            Inspiration for the hashchanging technique on this site came from
-            <a href="http://tutorialzine.com/2015/02/single-page-app-without-a-framework/">here</a>
-            which allows the URL to dictate the state of the page.
-        </p>
-        <p>Maybe I'll even make this page responsive...</p>
-    </div>
-
-    <div id="ccs-coop" class="state">
-        <h1>Co-op with Computing & Communication Services - University of Guelph</h1>
-        <h2>Introduction</h2>
-        <p>
-            My first co-op position came close to home, right here at the University of Guelph.  I worked in the Enterprise Applications department with a new system that was still being explored during my time with the team.  I worked heavily in C# using the .NET MVC framework as well as Knockout.JS which we used on the front-end.  This was my first experience with real-world software development and I experienced a lot:
-        </p>
-        <ul>
-            <li>Requirements gathering with our clients</li>
-            <li>Learning and teaching a new language and framework or two</li>
-            <li>Exploring new technologies and sharing them with peers</li>
-            <li>Writing two lines of documentation for every line of code</li>
-        </ul>
-
-    </div>
-
 </body>
 </html>
