@@ -44,7 +44,7 @@ nav a:hover {
     height: 150px;
     background-color: #3ad;
     color: #ffffff;
-    padding: 2em;
+    padding: 2em 0 2em 0;
 }
 
 .banner-gradient {
