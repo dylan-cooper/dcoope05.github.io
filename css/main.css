@@ -17,9 +17,7 @@ nav {
     width: 100%;
     background-color: #3ad;
     height: 30px;
-    display: -webkit-flex;
-    -webkit-box-pack: start;
-    -webkit-box-align: start;
+    display: flex;
     align-items: stretch;
 }
 
