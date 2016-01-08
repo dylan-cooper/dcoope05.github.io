@@ -3,117 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <title>Dylan Cooper</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
     <link rel="stylesheet" type="text/css" href="css/main.css" />
-    <script type="text/javascript" src="js/jquery-2.1.4.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
 </head>
 <body>
-
-
     <div class="banner">
         <div>Dylan Cooper</div>
         <div>Personal and Professional Web Page</div>
     </div>
     <nav><ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#about-me">About Me</a></li>
-        <li><a href="#about-site">About This Site</a></li>
-        <li><a href="#ccs-coop">Co-op at CCS</a></li>
+        <li><a href="#/">Home</a></li>
+        <li><a href="#/about-me">About Me</a></li>
+        <li><a href="#/about-site">About This Site</a></li>
+        <li><a href="#/coop/">Co-ops</a></li>
     </ul></nav>
 
     <div class="main">
-        <div id="home" class="state">
-            <h1>Home</h1>
-            <p>This is the personal/professional site of Dylan Cooper</p>
-            <p>
-            <ul>
-                <li><a href="#about-me">About Me</a></li>
-                <li><a href="#about-site">About This Site</a></li>
-                <li><a href="#ccs-coop">Co-op at CCS</a></li>
-            </ul>
+        <div id="content">
         </div>
-
-        <div id="about-me" class="state">
-            <h1>About Me</h1>
-            <img alt="I haven't chosen a picture yet but it will go here." src="img/my-pic.png" id="my-pic">
-            <p>My name is Dylan Cooper, I am a third year undergraduate student at the University of Guelph studying Software Engineering (major) and Physics (minor).</p>
-            <p>I always had a passion for mathematics and when I was introduced to programming for the first time, I was hooked...</p>
-        </div>
-
-        <div id="about-site" class="state">
-            <h1>This site</h1>
-            <p>This site was designed as a simple, frameworkless, single page application.  The reason I used an SPA rather than a more traditional application was because I felt like experimenting on a smaller scale (this) before I began a larger SPA project.</p>
-            <p>It is hosted through Github Pages.</p>
-            <p>
-                Inspiration for the hashchanging technique on this site came from
-                <a href="http://tutorialzine.com/2015/02/single-page-app-without-a-framework/">here</a>
-                which allows the URL to dictate the state of the page even though it is an SPA.
-            </p>
-            <p>This site isn't responsive yet, but will be soon.</p>
-
-            <p>My career is still young, so this website is very small also.  I hope to expand it as I do more interesting things worth mentioning.</p>
-        </div>
-
-        <div id="ccs-coop" class="state">
-            <h1>Co-op with University of Guelph CCS</h1>
-
-            <h2>Introduction</h2>
-            <img id="uog-logo" src="img/ccs-logo.png">
-
-            <p>During the Summer of 2015, I worked as a Junior Developer on the Enterprise Applications team of Computing &amp; Communication Services at the University of Guelph.  This was my first job in a technical role and I found it very rewarding.</p>
-            <p>I learned a lot about the software development process during my time on the team.  The software that we were working on wasn't yet in production, and a lot of what I was doing was researching what technologies we could use moving forward and how to use both those technologies and the ones provided to us by our vendor.</p>
-
-            <h2>Job Description</h2>
-            <p>The team that I was working with was in the early stages of converting from a legacy system using BASIC and a non-relational database to a new, modern system using the .NET framework and a SQL database.  I was brought on to help get the ball rolling on this project.  My first task was to learn the .NET framework, C# and some of the other technologies that we would be using.  Next, I helped set up Git source control, a method to deploy the website and other tools that we would need to use regularly.  I took time to wade through documentation and vendor source code for the new project and made demos/presentations to co-workers to explain the different parts to the new system.  Finally, in the last few months I was working on the team's first project in the new system.</p>
-
-            <h2>Goals</h2>
-
-            <p>After a month with on the job, I was asked to create five goals for the work term:</p>
-
-            <h3>Improve Understanding of Large-Scale Software Systems</h3>
-            <p>I did gain a great understanding of how this system worked.  By reading architecture documents and digging through the code, I learned all about the ins and outs of how this system worked.  Through research, I also gained a solid understanding of the similarities and differences that the system had to other systems that were more common.  I think that this was one of the best things about this work term; by the time that it ended, I could explain how parts worked in all of the different areas of the system.</p>
-
-            <h3>Learn C#, .NET framework, and other tools related to the system</h3>
-            <p>Tools/technologies that I extensively used while at this position:</p>
-            <img src="img/visual-studio.png" id="vs-logo">
-
-            <ul>
-                <li>C#</li>
-                <li>Microsoft Visual Studio</li>
-                <li>Git Source Control (Git Extensions)</li>
-                <li>ASP.NET MVC 5</li>
-                <li>ASP.NET Web API</li>
-                <li>Razor View Engine</li>
-                <li>Telerik Fiddler</li>
-                <li>KnockoutJS</li>
-                <li>JSFiddle</li>
-                <li>JQuery, JQuery UI</li>
-                <li>Ajax</li>
-                <li>Vendor specific SDKs</li>
-                <li>More…</li>
-            </ul>
-            <p>Over the course of the 4 month work term, I became very familiar with these technologies.  Gaining a comprehensive knowledge of these tools not only helped me make a meaningful impact on the team, but now I also feel very confident that I could use them again on another project.  As I got more and more familiar and comfortable with these technologies, I started to use these technologies (and similar ones) for small projects during my free time.  I think that learning this large variety of tools is what made it possible to gain a more hollistic understanding of the system; I wasn't focused on a specific area and ignoring what was happening in other areas.</p>
-
-            <h3>Gain understanding of Web Development Best Practices</h3>
-            <img src="img/html-css-js-logos.png" id="webdev-logo">
-            <p>Before this term, I had done a little bit of HTML, JavaScript and PHP but my web development experience was very limited.  In this position, I became increasingly interested in this field.  I worked with HTML5, CSS3 and JavaScript extensively while working on the front end and became very familiar with these tools.  At work I became familiar with several JavaScript libraries including KnockoutJS and JQuery and using these as a baseline, I looked at others including Backbone and Angular in my free time.  My new understanding of web development and best practices when creating large applications for the web was one of the best thing that I took away from this work term.</p>
-
-            <h3>Improve Documentation Skills</h3>
-            <img src="img/knowledge-base.png" id="kb-logo">
-            <p>I documented a lot over the course of this work term.  Because the project was still in the pre-production stages, the Knowledge-Base that the team would work with extensively in the coming years still had to be created.  This meant that about half of my time was spent explaining what I did in the other half.  Over the course of the term, I got a lot better at this; I got better at knowing where to go into detail to make the documents complete and where not to go into detail to keep the focus where it should be.  The ability to write clear and concise documentation is one of the most important skills to have as a software developer and I was really glad that I could develop my abilities during this work term.</p>
-
-            <h3>See the Software Development Cycle Firsthand</h3>
-            <p>In Software Design courses, I learned about the different stages of the software development lifecycle.  Using this firsthand on a day-to-day basis was really interesting for me.  In the last 2 months of my work term, I worked on a project in the system that I had been exploring.  I went to meetings with the clients to gather requirements, worked with my team to design the solution and played the primary role in actually developing the solution.  My work term ended just as the initial development was finished and I had demoed it to stakeholders and other members of the team.  While I didn’t get to see the project move to the later stages of the development cycle, meeting with the clients and seeing that perspective of software development was really interesting for me.</p>
-
-            <h2>Conclusion</h2>
-            <p>My goal with each of my work terms is to gain a better understanding of different areas in the software development/tech industry.</p>
-            <p>There were a lot of aspects to this job that I really liked.  The team was small, so I never felt like a "cog in the machine"; I could see how my work was impacting the product as a whole, and how the documentation that I  was contributing to the team's knowledge-base would affect the future of the project.  I really liked the stage that the project was at (pre-production) because I got to help set up software and processes in a way that I wouldn't get if I came in after the project was further along in the process.  Another thing that I liked about this position was that there was always more work to do and I was very rarely waiting around for more work.  It was interesting to work for the University because the organization  was very service-oriented (the underlying goal of CCS is to make tasks easier for employees and students rather than to sell products or grow revenue).</p>
-
-            <h2>Acknowledgements</h2>
-            <p>Firstly, I want to acknowledge my supervisor whom I worked most closely with, Inna Klimbovskaia.  I also wanted to acknowledge our manager Ruth Smith as well as Jeff Greuel, Mark Taylor and all the other members of the CCS team.  They made me feel comfortable with the job and really helped make this work term a success.</p>
-
-        </div>
-
     </div>
 </body>
 </html>

@@ -108,3 +108,18 @@ img {
     width: 30%;
     float: left;
 }
+
+#fb-logo {
+    width: 25%;
+    float: left;
+}
+
+#capybara-logo {
+    width: 30%;
+    float: right;
+}
+
+#arch-logo {
+    width: 25%;
+    float: left;
+}
