@@ -114,6 +114,11 @@ img {
     float: left;
 }
 
+#qa-logo {
+    width: 20%;
+    float: left;
+}
+
 #capybara-logo {
     width: 30%;
     float: right;
