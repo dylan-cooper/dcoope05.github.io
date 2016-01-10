@@ -84,47 +84,30 @@ img {
     margin: 10px;
 }
 
-#uog-logo {
+img.xsmall {
     width: 15%;
-    float: left;
 }
 
-#webdev-logo {
-    width: 25%;
-    float: left;
-}
-
-#kb-logo {
-    width: 30%;
-    float: right;
-}
-
-#vs-logo {
-    width: 35%;
-    float: right;
-}
-
-#my-pic {
-    width: 30%;
-    float: left;
-}
-
-#fb-logo {
-    width: 25%;
-    float: left;
-}
-
-#qa-logo {
+img.small {
     width: 20%;
-    float: left;
 }
 
-#capybara-logo {
-    width: 30%;
-    float: right;
-}
-
-#arch-logo {
+img.medium {
     width: 25%;
+}
+
+img.large {
+    width: 30%;
+}
+
+img.xlarge {
+    width: 35%;
+}
+
+img.left {
     float: left;
+}
+
+img.right {
+    float: right;
 }
