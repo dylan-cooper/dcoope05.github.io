@@ -1,7 +1,20 @@
-/**
- * Created by Dylan on 2015-07-29.
+/*
+ * Dylan Cooper
  */
 
+var errorPage = {path: 'posts/yikes.html', title: 'Yikes!'};
+var homePage = {path: 'posts/home.html', title: 'Home'};
+
+var map = {
+    "" : homePage,
+    "about-me" : {path: 'posts/about-me.html', title: 'About Me'},
+    "about-site": {path: 'posts/about-site.html', title: 'About This Site'},
+    "coop": {
+        "" : {path: 'posts/coop/home.html', title: 'Co-ops'},
+        "ccs" : {path: 'posts/coop/ccs.html', title: 'Co-op at CCS'},
+        "freshbooks" : {path: 'posts/coop/freshbooks.html', title: 'Co-op at FreshBooks'}
+    },
+}
 
 $(document).ready(function(){
     //Loads the state upon document being ready
@@ -12,50 +25,25 @@ $(window).on('hashchange', function(){
     render(window.location.hash);
 });
 
-function render(url){
-    var temp = url.split('/')[0];
+function render(hash){
+    var parts = hash.split('/');
+    
+    parts[2] = (parts[2] === undefined) ? '' : parts[2];
 
-    console.log(temp);
-    $('.state').removeClass('visible');
-
-    var map = {
-        "" : function() {
-            renderHome();
-        },
-
-        "#about-me" : function() {
-            renderAboutMe();
-        },
-
-        "#about-site": function() {
-            renderAboutSite();
-        },
-
-        "#ccs-coop": function(){
-            renderCcsCoop();
-        }
-    }
-
-    if (map[temp]){
-        map[temp]();
+    if (hash == '' || hash == '#'){
+        result = homePage;
+    } else if (parts.length > 3 || parts[0] != '#' || map[parts[1]] === undefined){
+        //Error in the hash
+        result = errorPage;
+    } else if (typeof map[parts[1]].path == 'string'){
+        result = map[parts[1]];
+    } else if (typeof map[parts[1]][parts[2]].path == 'string'){
+        result = map[parts[1]][parts[2]];
     } else {
-        renderHome();
+        result = errorPage;
     }
 
-}
-
-function renderHome(){
-    $("#home").addClass('visible');
-}
-
-function renderAboutMe(){
-    $("#about-me").addClass('visible');
-}
-
-function renderAboutSite(){
-    $("#about-site").addClass('visible');
-}
-
-function renderCcsCoop(){
-    $("#ccs-coop").addClass('visible');
+    console.log(result);
+    $('#content').load(result.path);
+    document.title = 'Dylan Cooper | ' + result.title;
 }
