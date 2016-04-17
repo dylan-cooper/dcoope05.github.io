@@ -1,3 +1,3 @@
-[submodule "dragon-curve"]
-	path = dragon-curve
+[submodule "vendor/dragon-curve"]
+	path = vendor/dragon-curve
 	url = https://github.com/dylan-cooper/dragon-curve

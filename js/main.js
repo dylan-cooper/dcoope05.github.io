@@ -16,8 +16,10 @@ var map = {
     },
     "snippets" : {
         "" : {path: 'posts/snippets/home.html', title: 'Snippets'},
-        "dragon-curve" : {path: 'posts/snippets/dragon-curve.html', title: 'Dragon Curve'}
-}
+        "dragon-curve" : {
+            path: 'posts/snippets/dragon-curve.html', title: 'Dragon Curve'}
+    }
+};
 
 $(document).ready(function(){
     //Loads the state upon document being ready

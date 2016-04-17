@@ -1,3 +1,53 @@
 <h1>Dragon Curve</h1>
-<p>This is where the dragon curve goes.</p>
+<p>A dragon curve is a fractal curve which can be approximated with recursive methods.  Here I used the HTML5 canvas to draw it and built some tools around it to customize.</p>
 
+<canvas id="myCanvas">
+Your browser does not support the canvas element.
+</canvas>
+<input id="dragon-color" type="color">
+<button id="draw-dragon">Go!</button>
+
+<script type="text/javascript" src="vendor/dragon-curve/dragon.js"></script>
+<script type="text/javascript">
+  var myCanvas = new DragonCanvas('myCanvas');
+  myCanvas.scaleFactor = 0.4;
+  myCanvas.nsteps = 12;
+  setDimensions();
+
+  function setDimensions() {
+    myCanvas.ctx.canvas.width = (window.innerWidth < 1000) ? (window.innerWidth - 8) : (4*window.innerWidth/5);
+    myCanvas.ctx.canvas.height = 3*myCanvas.ctx.canvas.width/4;
+  }
+
+  $(document).ready(function(){
+    myCanvas.animateDragon();
+  });
+
+  $('#dragon-color').on('change', function(event) {
+    myCanvas.color = event.target.value;
+    if (!myCanvas.isAnimating) {
+      myCanvas.clear();
+      myCanvas.draw(myCanvas.nsteps);
+    }
+  });
+
+  $('#draw-dragon').on('click', function() {
+    try {
+      myCanvas.animateDragon()
+    } catch (err) {}
+  });
+
+  $(window).resize(function() {
+    setDimensions();
+    myCanvas.draw(myCanvas.currentStep);
+  });
+</script>
+
+<style>
+#myCanvas {
+  border: 4px solid #808080;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+</style>
