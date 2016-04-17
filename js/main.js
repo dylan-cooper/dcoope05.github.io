@@ -8,12 +8,15 @@ var homePage = {path: 'posts/home.html', title: 'Home'};
 var map = {
     "" : homePage,
     "about-me" : {path: 'posts/about-me.html', title: 'About Me'},
-    "about-site": {path: 'posts/about-site.html', title: 'About This Site'},
-    "coop": {
+    "about-site" : {path: 'posts/about-site.html', title: 'About This Site'},
+    "coop" : {
         "" : {path: 'posts/coop/home.html', title: 'Co-ops'},
         "ccs" : {path: 'posts/coop/ccs.html', title: 'Co-op at CCS'},
         "freshbooks" : {path: 'posts/coop/freshbooks.html', title: 'Co-op at FreshBooks'}
     },
+    "snippets" : {
+        "" : {path: 'posts/snippets/home.html', title: 'Snippets'},
+        "dragon-curve" : {path: 'posts/snippets/dragon-curve.html', title: 'Dragon Curve'}
 }
 
 $(document).ready(function(){
@@ -43,7 +46,6 @@ function render(hash){
         result = errorPage;
     }
 
-    console.log(result);
     $('#content').load(result.path);
     document.title = 'Dylan Cooper | ' + result.title;
 }
