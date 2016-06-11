@@ -1,0 +1,120 @@
+<h1>Goose Playground</h1>
+
+<style>
+  .btn {
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin-bottom: 8px;
+    text-decoration: none;
+    color: #fff;
+    position: relative;
+    display: inline-block;
+    -webkit-user-select:none;
+    user-select:none;
+    background-color: #33aaee;
+    box-shadow: 0px 5px 0px 0px #2988be;
+  }
+
+  .btn:active {
+    transform: translate(0px, 5px);
+    -webkit-transform: translate(0px, 5px);
+    box-shadow: 0px 1px 0px 0px;
+  }
+
+  .btn:hover {
+    background-color: #5cbbf1;
+  }
+
+  #goose-playground-canvas {
+
+    border: 4px solid #808080;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+</style>
+
+<canvas id="goose-playground-canvas" width="1000" height="600">
+Your browser does not support the canvas element.
+</canvas>
+<a class="btn" id="add_one">Add One</a>
+<a class="btn" id="remove_one">Remove One</a>
+<a class="btn" id="add">Toggle Adding</a>
+<a class="btn" id="remove">Toggle Removing</a>
+<a class="btn" id="pause_play">Toggle Movement</a>
+<a class="btn" id="clear">Clear Particles</a>
+<a class="btn" id="special">Add Pattern</a>
+<a class="btn" id="reverse">Reverse Movement</a>
+<a class="btn" id="random-colors">Random Color Scheme</a>
+
+<script type="text/javascript">
+  var required_scripts = [
+    'vendor/goose/webgl-helpers.js',
+    'vendor/goose/color-helpers.js',
+    'vendor/goose/goose.js',
+    'vendor/goose/goose-shapes.js',
+    'vendor/goose-playground/playground-colors.js',
+    'vendor/goose-playground/goose-playground.js',
+  ];
+
+  $.getMultipleScripts = function(arr) {
+    var _arr = $.map(arr, function(src) {
+        return $.getScript(src);
+    });
+
+    _arr.push($.Deferred(function( deferred ){
+        $( deferred.resolve );
+    }));
+
+    return $.when.apply($, _arr);
+  }
+
+  $.getMultipleScripts(required_scripts).done(function() {
+    var playground = new GoosePlayground("goose-playground-canvas");
+
+    document.getElementById("add_one").onclick = function() {
+      playground.add();
+    };
+
+    document.getElementById("remove_one").onclick = function() {
+      playground.remove();
+    };
+
+    document.getElementById("add").onclick = function() {
+      playground.toggleAdding();
+    };
+
+    document.getElementById("remove").onclick = function() {
+      playground.toggleRemoving();
+    };
+
+    document.getElementById("pause_play").onclick = function() {
+      playground.togglePlaying();
+    };
+
+    document.getElementById("clear").onclick = function() {
+      playground.clear();
+    };
+
+    document.getElementById("special").onclick = function() {
+      playground.addSpecial();
+    };
+
+    document.getElementById("reverse").onclick = function() {
+      playground.reverse();
+    };
+
+    document.getElementById("random-colors").onclick = function() {
+      playground.changeColors();
+    };
+  });
+</script>
+
+<style>
+#goose-playground-canvas {
+  border: 4px solid #808080;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+</style>

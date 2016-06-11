@@ -1,7 +1,11 @@
 <h1>Dragon Curve</h1>
-<p>A dragon curve is a fractal curve which can be approximated with recursive methods.  Here I used the HTML5 canvas to draw it and built some tools around it to customize.</p>
+<p>
+  A dragon curve is a fractal curve which can be approximated with recursive
+  methods.  Here I used the HTML5 canvas to draw it and built some tools around
+  it to customize.
+</p>
 
-<canvas id="myCanvas">
+<canvas id="dragon-canvas">
 Your browser does not support the canvas element.
 </canvas>
 <input id="dragon-color" type="color">
@@ -9,7 +13,7 @@ Your browser does not support the canvas element.
 
 <script type="text/javascript">
   $.getScript("vendor/dragon-curve/dragon.js", function(data, textStatus, jqxhr) {
-    var myCanvas = new DragonCanvas('myCanvas');
+    var myCanvas = new DragonCanvas('dragon-canvas');
     myCanvas.scaleFactor = 0.4;
     myCanvas.nsteps = 12;
     setDimensions();
@@ -46,7 +50,7 @@ Your browser does not support the canvas element.
 </script>
 
 <style>
-#myCanvas {
+#dragon-canvas {
   border: 4px solid #808080;
   display: block;
   margin-left: auto;

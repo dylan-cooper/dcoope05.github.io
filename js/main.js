@@ -18,7 +18,9 @@ var map = {
     "snippets" : {
         "" : {path: 'posts/snippets/home.html', title: 'Snippets'},
         "dragon-curve" : {
-            path: 'posts/snippets/dragon-curve.html', title: 'Dragon Curve'}
+            path: 'posts/snippets/dragon-curve.html', title: 'Dragon Curve'},
+        "goose-playground": {
+            path: 'posts/snippets/goose-playground.html', title: 'Goose Playground'},
     }
 };
 
