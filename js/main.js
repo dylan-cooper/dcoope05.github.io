@@ -9,6 +9,7 @@ var map = {
     "" : homePage,
     "about-me" : {path: 'posts/about-me.html', title: 'About Me'},
     "about-site" : {path: 'posts/about-site.html', title: 'About This Site'},
+    "programming-languages" : {path: 'posts/programming-languages.html', title: 'Programming Languages'},
     "coop" : {
         "" : {path: 'posts/coop/home.html', title: 'Co-ops'},
         "ccs" : {path: 'posts/coop/ccs.html', title: 'Co-op at CCS'},
