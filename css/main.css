@@ -16,8 +16,8 @@ body, div, nav {
 nav {
     width: 100%;
     background-color: #3ad;
-    height: 30px;
     display: table;
+    padding-top: 0.7em;
 }
 
 nav ul {
@@ -27,6 +27,7 @@ nav ul {
 nav li {
     display: table-cell;
     margin: 0;
+    max-height:30px;
     width: 25%;
 }
 
@@ -37,11 +38,12 @@ nav a {
     cursor: pointer;
     float: left;
     font-weight: bold;
-    color: #fff;
-    background-color: #3ad;
     text-align: center;
     text-decoration: none;
     text-transform: uppercase;
+
+    color: #fff;
+    background-color: #3ad;
 }
 
 nav a:hover {
@@ -54,30 +56,26 @@ nav a:hover {
     height: 150px;
     background-color: #3ad;
     color: #ffffff;
-    padding: 2em 0 2em 0;
+    padding: 0.5em 0 1em 0;
+
+    white-space: nowrap;
 }
 
-.banner-gradient {
-    background: -webkit-linear-gradient(#3ad, #fff); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(#3ad, #fff); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(#3ad, #fff); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(#3ad, #fff); /* Standard syntax (must be last) */
-}
-
-
-.banner > div:nth-child(1) {
+.banner-title > div:nth-child(1) {
     text-align: center; 
     font-size: 3.5em;
 }
-.banner > div:nth-child(2) {
+.banner-title > div:nth-child(2) {
     text-align: center;
-    font-size: 2em;
+    font-size: 1.3em;
+    font-style: italic;
 }
 
 .main {
     max-width: 1000px;
     margin-left: auto;
     margin-right: auto;
+    padding-top: 1em;
 }
 
 img {
