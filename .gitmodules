@@ -1,9 +1,6 @@
 [submodule "vendor/dragon-curve"]
 	path = vendor/dragon-curve
 	url = https://github.com/dylan-cooper/dragon-curve
-[submodule "vendor/goose-playground"]
-	path = vendor/goose-playground
-	url = https://github.com/dylan-cooper/goose-playground
 [submodule "vendor/goose"]
 	path = vendor/goose
 	url = https://github.com/dylan-cooper/goose
