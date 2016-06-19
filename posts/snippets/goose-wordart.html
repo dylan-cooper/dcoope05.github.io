@@ -1,0 +1,82 @@
+<h1>Goose Word Art</h1>
+
+<canvas id="goose-wordart-canvas" class="goose-canvas" width="1000" height="600">
+Your browser does not support the canvas element.
+</canvas>
+
+<div class="btn" id="change-text">Change text: <input class="btn-text-input" id="message" type="text"></input></div>
+<a class="btn" id="pause_play">Toggle Movement</a>
+<a class="btn" id="clear">Clear Particles</a>
+<a class="btn" id="scatter">Scatter</a>
+<a class="btn" id="change-colors">Random Color Scheme</a>
+
+<script>
+  var required_scripts = [
+    'vendor/goose/webgl-helpers.js',
+    'vendor/goose/color-helpers.js',
+    'vendor/goose/goose.js',
+    'vendor/goose/goose-shapes.js',
+    'vendor/goose/playground-colors.js',
+    'vendor/goose/goose-wordart.js',
+    'vendor/goose/characters.js',
+  ];
+
+  $.getMultipleScripts(required_scripts).done(function(){
+    var wordart = new GooseText("goose-wordart-canvas", characters);
+
+    document.getElementById("pause_play").onclick = function() {
+      wordart.togglePlaying();
+    };
+
+    document.getElementById("clear").onclick = function() {
+      wordart.clear();
+    };
+
+    document.getElementById("change-colors").onclick = function() {
+      wordart.changeColors();
+    };
+
+    var changeText = document.getElementById("change-text");
+    var inputBox = document.getElementById("message");
+
+    changeText.addEventListener("click", function(e) {
+      if (this === e.target) {
+        wordart.setText(inputBox.value);
+      }
+    });
+
+    changeText.addEventListener("mousedown", function(e) {
+      if (this === e.target) {
+        this.className = "btn btn-active";
+      }
+    });
+
+    document.addEventListener("mouseup", function(e) {
+      changeText.className = "btn";
+    });
+
+    inputBox.addEventListener("keypress", function(e) {
+      if (e.charCode == 13) {
+        wordart.setText(inputBox.value);
+      }
+    });
+
+    var scattering = false;
+    document.getElementById("scatter").onclick = function() {
+      if (!scattering) {
+        scattering = true;
+        var oldTime = wordart.timeToDisappear;
+        wordart.setTimeToDisappear(3);
+        wordart.setText("");
+        setTimeout(function() {
+          wordart.setTimeToDisappear(oldTime);;
+          wordart.setText(inputBox.value);
+          scattering = false;
+        }, 3000);
+      }
+    }
+
+    inputBox.value = "Dylan";
+    wordart.setText("Dylan");
+  });
+</script>

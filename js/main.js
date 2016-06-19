@@ -21,6 +21,8 @@ var map = {
             path: 'posts/snippets/dragon-curve.html', title: 'Dragon Curve'},
         "goose-playground": {
             path: 'posts/snippets/goose-playground.html', title: 'Goose Playground'},
+        "goose-wordart": {
+            path: 'posts/snippets/goose-wordart.html', title: 'Goose Word Art'},
     }
 };
 
@@ -35,7 +37,7 @@ $(window).on('hashchange', function(){
 
 function render(hash){
     var parts = hash.split('/');
-    
+
     parts[2] = (parts[2] === undefined) ? '' : parts[2];
 
     if (hash == '' || hash == '#'){
