@@ -1,82 +1,100 @@
-<ul>
-  <li>C</li>
-  <li>C#</li>
-  <li>C++</li>
-  <li>JavaScript</li>
-  <li>Java</li>
-  <li>Python</li>
-  <li>PHP</li>
-  <li>Objective-C</li>
-  <li>Elixir</li>
-  <li>Ruby</li>
-  <li></li>
-</ul>
+<style>
+.code {
+  font-family: Courier, monospace;
+  background-color: #eee;
+  font-size: 13px;
+  margin: 1em;
+  line-height: 100%;
+}
+</style>
+<h1>Programming Languages</h1>
 
- <ul>
-  <li>knockout.js</li>
-  <li>React</li>
-  <li>Sencha Ext JS</li>
-  <li>Electron</li>
- </ul>
+<p>
+  This is a (somewhat) brief overview of the programming languages and
+  technologies that I have used.  I will try to keep it up to date as much as
+  possible.
+</p>
 
-<div>C</div>
-<div>
+<h2>C</h2>
+<p>
   C is the primary language used in University of Guelph computing courses.  I
   have a thorough understanding of the ins and outs of the language.  I've used
-  it for programs including a maze solver, binary search tree, lexer/parser and
-  sudoku solver.
-</div>
+  it for multiple programs including a maze solver, binary search tree,
+  lexer/parser and sudoku puzzle solver.
+</p>
 
-<div>C#</div>
-<div>
-  I was introduced to C# and the .NET environment during my first work placement
-  with the University of Guelph Computing &amp; Communication Services.  I've
-  worked with many parts of the C# .NET MVC framework.
-</div>
+<h2>C# and .NET MVC</h2>
+<p>
+  I used the C# programming language with the .NET MVC framework during my first
+  co-op term at the University of Guelph.  I became very familiar with the
+  framework and language, as part of my job was introducing it to other members
+  of the team who would be working on the system in the future.
+</p>
 
-<div>Java</div>
-<div>
-  Java is another language that the University of Guelph School of Computer
-  Science emphasizes highly in its courses.  I've used Java with Swing to create
-  GUIs and with JNI to interface with lower level libraries written in C.
-</div>
+<h2>Java</h2>
+<p>
+  My experience in Java is limited to classes in object oriented design at the
+  University of Guelph.  The most common use case for Java in these courses was
+  Swing-based GUI programs, so I have used it to make a few of those.  It is
+  also my language of choice for programming contests and Project Euler
+  questions.
+</p>
 
-<div>Python</div>
-<div>
-</div>
+<h2>QBASIC</h2>
+<p>
+  QBASIC was the first programming language I learned, in high school.  As this
+  was when I was just learning the basics of programming, the programs that I
+  wrote were pretty "basic".  I leave it on this list because this is really
+  where I fell in love with programming.  Below is some old code I found from an
+  exercise which was before the concept of nested loops was introduced. &#x1F642;
+</p>
+<pre class="code" title="Note on line 110, I think the semicolon is used to avoid printing a newline.">
+1 ' Description : Prints lines of Stars
+2 ' Programmer : Dylan Cooper
+3 ' Date : Feb 17
 
-<div>PHP</div>
-<div>
-  I've used PHP numerous times to write small web applications.  As part of a
-  hack day at FreshBooks, I used PHP to write the back end for their business
-  name generator tool.  At Tulip Retail, PHP was the primary language used.
-</div>
+4 ' Variables
+5 '     I - controls the loop
+6 '     NUMSTARS - number of lines of stars
+7 '     STARCOUNT - number of stars already on that line
 
-<div>Ruby</div>
-<div>
-</div>
+50 CLS
+70 PRINT "How many lines of stars would you like?";
+80 INPUT NUMSTARS
+90 FOR I = 1 TO NUMSTARS
+100     LET STARCOUNT = STARCOUNT + 1
+110     IF STARCOUNT < I THEN PRINT "*";  ELSE PRINT "*"
+120     IF STARCOUNT < I THEN GOTO 100
+130     LET STARCOUNT = 0
+140 NEXT I
+</pre>
 
-<div>R</div>
-<div>
-  I've used R for some statistical analysis and visualisation in several of my
-  courses.
-</div>
+<h2>Visual Basic 6</h2>
+<p>
+  After learning the basics in QBASIC, our high school programming courses moved
+  on to teach the wonders of Visual Basic 6, where we created GUIs and games.
+  During this time, I created a Deal or No Deal game, a pool/billiards game, a
+  pacman-esque game and a mario-esque game.  I found the old source code
+  recently, and may post a picture of what the games looked like if I can find
+  a way to compile it. &#x1F606;
+</p>
 
-<div>Knockout</div>
-<div>
-  While working at my first work placement, I used Knockout.js to create rich
-  front end experiences.
-</div>
+<h2>PHP</h2>
+<p>
+  I've used PHP for a few projects and am pretty comfortable using it for just
+  about anything.  As part of a 2 day hack-a-thon during my work term at
+  FreshBooks, I used it to write the backend for their "business name generator"
+  and it later became a constant companion when I started at Tulip Retail where
+  it is their systems' primary language.
+</p>
 
-<div>Node.js</div>
-<div>
-  I'm familiar with aspects of the node.js environment.  I've
-</div>
-
-<div>Sencha Ext JS</div>
-<div>
-</div>
-
-<div>Electron</div>
-<div>
-</div>
+<h2>Python</h2>
+<h2>Perl</h2>
+<h2>Elixir</h2>
+<h2>Golang</h2>
+<h2>Ruby</h2>
+<h2>R</h2>
+<h2>knockout.js</h2>
+<h2>React</h2>
+<h2>Sencha Ext JS</h2>
+<h2>Electron</h2>
