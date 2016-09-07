@@ -1,8 +1,7 @@
-body, div, nav {
-    font-size: 110%;
-    line-height: 150%;
-    font-family: sans-serif;
-    margin: 0;
+body {
+  font-size: 21px;
+  font-family: sans-serif;
+  margin: 0;
 }
 
 .state{
@@ -56,7 +55,7 @@ nav a:hover {
     height: 150px;
     background-color: #3ad;
     color: #ffffff;
-    padding: 0.5em 0 1em 0;
+    padding: 0.5em 0 0 0;
 
     white-space: nowrap;
 }
@@ -75,7 +74,6 @@ nav a:hover {
     max-width: 1000px;
     margin-left: auto;
     margin-right: auto;
-    padding-top: 1em;
 }
 
 img {
@@ -154,4 +152,18 @@ a.btn:active {
   display: block;
   margin-left: auto;
   margin-right: auto;
+}
+
+.post-link {
+  font-size: 19px;
+  line-height: 1.1em;
+}
+
+a.post-link {
+  color: #666;
+  text-decoration: none;
+}
+
+a.post-link:hover {
+  text-decoration: underline;
 }
