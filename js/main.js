@@ -44,7 +44,12 @@ var router = {
       path: 'posts/coop/tulip.html',
       title: 'Co-op at Tulip Retail',
       description: 'During the summer of 2016, I worked as a software developer for 4 months at Tulip Retail, a startup that builds retail and ecommerce software.',
-    }
+    },
+    "zeitspace": {
+      path: 'posts/coop/zeitspace.html',
+      title: 'Co-op at Zeitspace',
+      description: 'During the winter of 2017, I worked as a software developer for 4 months at Zeitspace, a brand new software design and development agency.',
+    },
   },
   "snippets" : {
     "" : {
