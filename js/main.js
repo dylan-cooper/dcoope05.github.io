@@ -50,6 +50,11 @@ var router = {
       title: 'Co-op at Zeitspace',
       description: 'During the winter of 2017, I worked as a software developer for 4 months at Zeitspace, a brand new software design and development agency.',
     },
+    "tulip-2": {
+      path: 'posts/coop/tulip-2.html',
+      title: 'Second Co-op at Tulip Retail',
+      description: 'During the summer of 2017, I returned to Tulip Retail to work as a full-stack developer.',
+    },
   },
   "snippets" : {
     "" : {

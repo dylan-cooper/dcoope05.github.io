@@ -40,9 +40,9 @@ nav a {
     text-align: center;
     text-decoration: none;
     text-transform: uppercase;
-
     color: #fff;
     background-color: #3ad;
+    padding: 5px 0;
 }
 
 nav a:hover {
@@ -69,7 +69,7 @@ nav a:hover {
 }
 
 .main {
-    max-width: 1000px;
+    max-width: 750px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -79,23 +79,23 @@ img {
 }
 
 img.xsmall {
-    width: 15%;
-}
-
-img.small {
     width: 20%;
 }
 
-img.medium {
+img.small {
     width: 25%;
 }
 
-img.large {
+img.medium {
     width: 30%;
 }
 
+img.large {
+    width: 40%;
+}
+
 img.xlarge {
-    width: 35%;
+    width: 45%;
 }
 
 img.left {
